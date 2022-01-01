@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard using HTML CSS and JavaScript</title>
+    <!--MATERIAL CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/Logocodeivk.png" alt="Developers logo">
+                    <h2>CODE <span class="danger">IVK</span> </h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-round">do_not_disturb_on</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-round">space_dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">supervised_user_circle</span>
+                    <h3>Clientes</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">receipt_long</span>
+                    <h3>Pedidos</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">insights</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">mail_outline</span>
+                    <h3>Mensagens</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">inventory</span>
+                    <h3>Produtos</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">reports</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">groups</span>
+                    <h3>Funcionários</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">cases</span>
+                    <h3>Fornecedores</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">add_circle_outline</span>
+                    <h3>Add Produtos</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">settings_suggest</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">logout</span>
+                    <h3>logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-------------- END OF ASIDE-------------->
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-round">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Vendas totais</h3>
+                            <h1>$25,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg> 
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!-------------- END OF SALES -------------->
+                <div class="expenses">
+                    <span class="material-icons-round">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Despesas totais</h3>
+                            <h1>$14,16</h1>
+                        </div>
+                        <div class="progress">
+                            <svg> 
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!-------------- END OF EXPENSES -------------->
+                <div class="income">
+                    <span class="material-icons-round">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Despesas Totais</h3>
+                            <h1>$10,864</h1>
+                        </div>
+                        <div class="progress">
+                            <svg> 
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!-------------- END OF INCOME -------------->
+            </div>
+            <!-------------- END OF INSIGHTS -------------->
+            <div class="recent-orders">
+                <h2>Pedidos Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do Produto</th>
+                            <th>Numero do Produtos</th>
+                            <th>Forma de Pagamento</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pneu</td>
+                            <td>85631</td>
+                            <td>Vencimento</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Pneu</td>
+                            <td>85631</td>
+                            <td>Vencimento</td>
+                            <td class="warning">Pendente</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Mostrar Tudo</a>
+            </div>
+        </main>
+        <!-------------- END OF MAIN -------------->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-round">list</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-round active">light_mode</span>
+                    <span class="material-icons-round">nightlight</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Isaac</b></p>
+                        <samll class="text-muted">Admin</samll>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/isaac.jpg" alt="Foto do Isaaczinho">
+                    </div>
+                </div>
+            </div>
+            <!-------------- END OF TOP -------------->
+            <div class="recent-updates">
+                <h2>Atualizações Recentes</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/vini.jpg" alt="Foto do Isaaczinho">
+                        </div>
+                        <div class="message">
+                            <p><b>Vinicius</b> recebeu sua ordem (pneu top das galáxias).</p>
+                            <small class="text-muted">2 Minutos Atrás</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/euzinha.jpg" alt="Foto do Isaaczinho">
+                        </div>
+                        <div class="message">
+                            <p><b>Kaylany</b> recebeu sua ordem (pneu top das galáxias).</p>
+                            <small class="text-muted">2 Minutos Atrás</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/isaac.jpg" alt="Foto do Isaaczinho">
+                        </div>
+                        <div class="message">
+                            <p><b>Isaac</b> recebeu sua ordem (pneu top das galáxias).</p>
+                            <small class="text-muted">2 Minutos Atrás</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/euzinha.jpg" alt="Foto do Isaaczinho">
+                        </div>
+                        <div class="message">
+                            <p><b>Kaylany</b> recebeu sua ordem (pneu top das galáxias).</p>
+                            <small class="text-muted">2 Minutos Atrás</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------- END OF RECENT UPDATES -------------->
+            <div class="sales-analytics">
+                <h2>Análise de Vendas</h2>
+                <div class="item-online">
+                    <div class="icon">
+                        <span class="material-icons-round">shopping_cart</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Pedidos Online</h3>
+                            <small class="text-muted">Há 24 horas</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-icons-round">local_mall</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Pedidos Offline</h3>
+                            <small class="text-muted">Há 24 horas</small>
+                        </div>
+                        <h5 class="danger">-17%</h5>
+                        <h3>1110</h3>
+                    </div>
+                </div>
+                <div class="item custumers">
+                    <div class="icon">
+                        <span class="material-icons-round">person</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Novos Clientes</h3>
+                            <small class="text-muted">Há 24 horas</small>
+                        </div>
+                        <h5 class="success">+25%</h5>
+                        <h3>849</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-icons-round">add</span>
+                        <h3>Add Prudutos</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
